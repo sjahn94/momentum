@@ -1,14 +1,15 @@
-const clock = document.querySelector("h2#clock");
-clock.innterText = "lalalalall";
+const time = document.querySelector(".time");
 
-function getClock() {
+function clock() {
   const date = new Date();
+
   const hours = date.getHours();
-  const minutes = date.getMinutes().toString().padStart(2, "0");
-  const seconds = date.getSeconds().toString().padStart(2, "0");
+  let minutes = String(date.getMinutes());
+  let seconds = String(date.getSeconds());
 
-  clock.innerText = `${hours}:${minutes}:${seconds}`;
+  minutes = minutes.padStart(2, "0");
+  seconds = seconds.padStart(2, "0");
+  time.innerText = `${hours}:${minutes}:${seconds}`;
 }
-
-getClock();
-setInterval(getClock, 1000);
+clock();
+setInterval(clock, 1000);
