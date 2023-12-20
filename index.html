@@ -3,25 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momentum App</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Momentum</title>
   </head>
   <body>
-    <form class="hidden" id="login-form"></form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 class="hidden" id="greeting">Hello nico</h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    <h3 class="time">00:00:00</h3>
+    <div class="user">
+      <h2></h2>
+    </div>
+
+    <form id="login">
+      <input type="text" placeholder="Write a username" id="username" />
     </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
+
+    <form id="todo">
+      <input type="text" placeholder="Write a To Do and Press Enter" />
+    </form>
+
+    <div class="qutoes">
       <span></span>
       <span></span>
     </div>
-    <script src="js/greetings.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
+
+    <img src="img/0.jpeg" />
   </body>
+  <script src="js/clock.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
 </html>
