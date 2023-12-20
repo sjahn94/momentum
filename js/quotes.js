@@ -8,7 +8,8 @@ const quotes = [
     author: "John Lennon",
   },
   {
-    quote: "The world is a book and those who do not travel read only one page.",
+    quote:
+      "The world is a book and those who do not travel read only one page.",
     author: "Saint Augustine",
   },
   {
@@ -41,10 +42,9 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector(".qutoes span:first-child");
+const author = document.querySelector(".qutoes span:last-child");
 
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
-
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+const random = Math.floor(Math.random() * quotes.length);
+quote.innerText = quotes[random].quote;
+author.innerText = quotes[random].author;
